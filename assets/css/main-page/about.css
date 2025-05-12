@@ -1,0 +1,54 @@
+.about-us-container {
+    flex-direction: column;
+}
+
+/* Flexbox layout for the two columns */
+.about-us-content {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows the columns to stack on smaller screens */
+}
+
+/* Image column */
+.about-us-image {
+    flex: 1 1 45%; /* 45% width for the image column */
+    max-width: 45%; 
+}
+
+.about-us-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional rounded corners for the image */
+}
+
+/* Text column */
+.about-us-text {
+    flex: 1 1 45%; /* 45% width for the text column */
+    max-width: 45%;
+    padding: 10px;
+	font-size: 1.1rem; /* Updated font size for larger text */
+}
+
+/* Ensure image positioning is applied */
+.image-left .about-us-content {
+    flex-direction: row; /* Image on the left, text on the right */
+}
+
+.image-right .about-us-content {
+    flex-direction: row-reverse; /* Image on the right, text on the left */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    /* Stack the columns on smaller screens */
+    .about-us-content {
+        flex-direction: column; /* Stack vertically */
+        align-items: center;
+    }
+
+    .about-us-image, .about-us-text {
+        flex: 1 1 100%; /* Full width on mobile */
+        max-width: 100%;
+    }
+}

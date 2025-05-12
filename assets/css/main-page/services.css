@@ -1,0 +1,56 @@
+/* Container for About Us Section */
+.services-container {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Flexbox layout for the two columns */
+.services-content {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap; /* Allows the columns to stack on smaller screens */
+}
+
+/* Image column */
+.services-image {
+    flex: 1 1 45%; /* 45% width for the image column */
+    max-width: 45%; 
+}
+
+.services-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px; /* Optional rounded corners for the image */
+}
+
+/* Text column */
+.services-text {
+    flex: 1 1 45%; /* 45% width for the text column */
+    max-width: 45%;
+    padding: 10px;
+}
+
+/* Ensure image positioning is applied */
+.image-left .services-content {
+    flex-direction: row; /* Image on the left, text on the right */
+}
+
+.image-right .services-content {
+    flex-direction: row-reverse; /* Image on the right, text on the left */
+}
+
+/* Mobile responsiveness */
+@media (max-width: 768px) {
+    /* Stack the columns on smaller screens */
+    .services-content {
+        flex-direction: column; /* Stack vertically */
+        align-items: center;
+    }
+
+    .services-image, .services-text {
+        flex: 1 1 100%; /* Full width on mobile */
+        max-width: 100%;
+        margin-bottom: 15px; /* Add space between the image and text */
+    }
+}

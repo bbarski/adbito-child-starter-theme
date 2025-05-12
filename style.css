@@ -1,0 +1,133 @@
+/*
+Theme Name:   Child Starter Theme
+Theme URI:    
+Description:  Child Theme of Starter Theme from Dalton Agency	
+Author:       adBito
+Author URI:   https://adbito.pl
+Template:     starter-wp-main
+Version:      0.2.0
+Text Domain:  my-child-theme
+*/
+
+/* Global Variables */
+:root {
+--font-size-base: 1rem;
+--font-size-h1: clamp(1.82rem, calc(1.82rem + 2.42vw), 3.03rem);
+--font-size-h2: clamp(1.69rem, calc(1.69rem + 0.73vw), 3.03rem);
+--font-size-h3: clamp(1.45rem, calc(1.45rem + 0.48vw), 2.42rem);
+--font-size-ahref: clamp(1.21rem, calc(1.21rem + 0.61vw), 1.45rem);
+--font-size-p: clamp(1.21rem, calc(1.21rem + 0.36vw), 1.33rem);
+--cta-font-size: clamp(1.21rem, calc(1.21rem + 0.36vw), 1.45rem);
+--global-font-family: 'EB Garamond', serif;
+--color-bg-body: #ffffff;
+--color-text-body: #1f1f1f;
+--color-bg-burger: #1f1f1f;
+--color-global-ahref:goldenrod;
+--header-height: 72px;
+--width-max-container:1200px;
+}
+
+
+[site-theme="outdoor"] {
+	--color-bg-body: #3b3b2e;
+	--color-text-body: #d1d1b2; /* #e0e0d1 */
+	--color-bg-burger:;
+	--color-fg-burger:;
+	--color-bg-header:;
+	--color-text-header:;
+	--color-bg-footer: #3d3d3c;
+	--color-text-footer:;
+	--color-global-ahref:goldenrod;
+	--color-header-bloginfo-ahref:goldenrod;
+	--color-header-bloginfo-ahref-hover:#ffc107;
+	--color-footer-creator-ahref:goldenrod;
+	--color-footer-creator-ahref-hover:#ffc107;
+	--color-footer-bloginfo-ahref:;
+	--color-footer-bloginfo-ahref-hover:;
+}
+
+[site-theme="dark"] {
+	--color-bg-body: black;
+	--color-text-body: white;
+	--color-bg-burger:;
+	--color-fg-burger:;
+	--color-bg-header:;
+	--color-text-header:;
+	--color-bg-footer:;
+	--color-text-footer:;
+	--color-global-ahref:goldenrod;
+	--color-footer-creator-ahref:goldenrod;
+	--color-footer-creator-ahref-hover:#ffc107;
+	--color-footer-bloginfo-ahref:;
+	--color-footer-bloginfo-ahref-hover:;
+}
+
+[site-theme="light"] {
+	--color-bg-body: white;
+	--color-text-body: black;
+	--color-bg-burger:;
+	--color-fg-burger:;
+	--color-bg-header:;
+	--color-text-header:;
+	--color-bg-footer:;
+	--color-text-footer:;
+	--color-global-ahref:;
+	--color-footer-creator-ahref:goldenrod;
+	--color-footer-creator-ahref-hover:#ffc107;
+	--color-footer-bloginfo-ahref:;
+	--color-footer-bloginfo-ahref-hover:;
+}
+
+
+h1 {font-size: var(--font-size-h1);}
+h2 {font-size: var(--font-size-h2);}
+h3 {font-size: var(--font-size-h3);}
+p {font-size: var(--font-size-p);}
+
+a {
+   font-size: var(--font-size-ahref);
+   text-decoration: none;
+}
+
+h1,h2,h3,h4,h5,h6,p,ul,ol,li,a,q,span,button,input,textarea,label,cite,table,details{
+	font-family: var(--global-font-family) !important;
+}
+
+/* GENERAL STYLES */
+html, body {
+	height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: var(--color-bg-body);
+	color: var(--color-text-body);
+}
+
+main {
+	display: flex;
+    flex-direction: column;
+	flex-grow: 1;
+	gap: 40px; /* beetwen sections */
+	background-color: inherit;
+	color: inherit;
+}
+
+main a {
+	color: var(--color-global-ahref)
+}
+
+section {
+	display: flex
+}
+
+main section:last-child {
+    margin-bottom: 40px; /* footer margin */
+}
+
+section h2.section-title {
+	margin-bottom:20px;
+	text-align:center;
+}
+
+section p.section-paragraph{
+	/*color:#e3e1d4;*/
+}
