@@ -1,0 +1,6 @@
+[submodule "starter-theme"]
+	path = starter-theme
+	url = https://github.com/bbarski/starter-theme.git
+[submodule "starter"]
+	path = starter
+	url = https://github.com/bbarski/starter-theme.git
