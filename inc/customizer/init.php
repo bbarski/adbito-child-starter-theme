@@ -13,6 +13,25 @@
 // ];
 
 $customizer_sections_config = [
+		'mytheme_header_section' => [
+        'title'    => 'Theme Colors',
+        'priority' => 19,
+        'settings' => [
+			'theme_colors'   => ['outdoor-night', 'Theme colors', 'radio',
+										 ['outdoor-night'  => 'outdoor-night',
+										  'outdoor' => 'outdoor',
+										  'dark' => 'dark',
+										  'light' => 'light',
+			]],
+        ],
+    ],
+	    'mytheme_custom_logo' => [
+        'title'    => 'Header Logo',
+        'priority' => 20,
+        'settings' => [
+            'mytheme_custom_logo'    => ['', 'Custom Header Logo', 'image'],
+        ],
+    ],
     'mytheme_hero_section' => [
         'title'    => 'Hero Section',
         'priority' => 21,
