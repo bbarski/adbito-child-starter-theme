@@ -28,6 +28,25 @@ Text Domain:  my-child-theme
 }
 
 
+[site-theme="outdoor-night"] {
+	--color-bg-body: black;
+	--color-text-body: #d1d1b2; /* #e0e0d1 */
+	--color-bg-burger:;
+	--color-fg-burger:;
+	--color-bg-header:;
+	--color-text-header:;
+	--color-bg-footer: #3d3d3c;
+	--color-text-footer:;
+	--color-global-ahref:goldenrod;
+	--color-header-bloginfo-ahref:goldenrod;
+	--color-header-bloginfo-ahref-hover:#ffc107;
+	--color-footer-creator-ahref:goldenrod;
+	--color-footer-creator-ahref-hover:#ffc107;
+	--color-footer-bloginfo-ahref:;
+	--color-footer-bloginfo-ahref-hover:;
+}
+
+
 [site-theme="outdoor"] {
 	--color-bg-body: #3b3b2e;
 	--color-text-body: #d1d1b2; /* #e0e0d1 */
