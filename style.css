@@ -45,23 +45,22 @@ Text Domain:  my-child-theme
 	--color-footer-bloginfo-ahref:;
 	--color-footer-bloginfo-ahref-hover:;
 }
-
 [site-theme="retro-games"] {
-	--color-bg-body: #1b1b1b;
-	--color-text-body: #c6c6c6;
-	--color-bg-burger: #2d2d2d;
-	--color-fg-burger: #00ffcc;
-	--color-bg-header: #262626;
-	--color-text-header: #00ffcc;
-	--color-bg-footer: #1a1a1a;
-	--color-text-footer: #cccccc;
+	--color-bg-body: #121212;
+	--color-text-body: #f5f5f5;
+	--color-bg-burger: #1e1e2e;
+	--color-fg-burger: #00f0ff;
+	--color-bg-header: #1a0025;
+	--color-text-header: #ff44cc;
+	--color-bg-footer: #0f0f1a;
+	--color-text-footer: #eeeeee;
 	--color-global-ahref: #ffcc00;
-	--color-header-bloginfo-ahref: #ffcc00;
-	--color-header-bloginfo-ahref-hover: #ff6600;
-	--color-footer-creator-ahref: #ffcc00;
-	--color-footer-creator-ahref-hover: #ff6600;
-	--color-footer-bloginfo-ahref: #00ffff;
-	--color-footer-bloginfo-ahref-hover: #ff00ff;
+	--color-header-bloginfo-ahref: #00ff88;
+	--color-header-bloginfo-ahref-hover: #ff00aa;
+	--color-footer-creator-ahref: #00ffcc;
+	--color-footer-creator-ahref-hover: #ff44cc;
+	--color-footer-bloginfo-ahref: #00ffcc;
+	--color-footer-bloginfo-ahref-hover: #ffcc00;
 }
 
 [site-theme="outdoor"] {
