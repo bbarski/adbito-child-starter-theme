@@ -22,6 +22,7 @@ $customizer_sections_config = [
 										  'outdoor' => 'outdoor',
 										  'dark' => 'dark',
 										  'light' => 'light',
+										  'retro-games' => 'retro-games',
 			]],
         ],
     ],
