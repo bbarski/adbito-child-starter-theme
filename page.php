@@ -1,4 +1,5 @@
-<?php get_header(); ?>
+<?php
+get_template_part('components/header');?>
 
 <main class="page-main">
     <div class="page-container">
@@ -11,4 +12,5 @@
     </div>
 </main>
 
-<?php get_footer(); ?>
+<?php
+get_template_part('components/footer');?>
