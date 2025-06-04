@@ -30,7 +30,7 @@ $customizer_sections_config = [
         'title'    => 'Header Logo',
         'priority' => 20,
         'settings' => [
-            'mytheme_custom_logo'    => ['', 'Custom Header Logo', 'image'],
+            'mytheme_custom_logo'    => ['default_logo_url', 'Custom Header Logo', 'image'],
         ],
     ],
     'mytheme_hero_section' => [

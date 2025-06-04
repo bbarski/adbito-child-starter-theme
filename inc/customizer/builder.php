@@ -51,6 +51,7 @@ function mytheme_customize_sections_builder($wp_customize, $customizer_sections_
 
 
 function get_section_data($customizer_sections_config) {
+
     $section_data = [];
 
     foreach ($customizer_sections_config as $section_id => $section) {
@@ -64,5 +65,4 @@ function get_section_data($customizer_sections_config) {
 
     return $section_data;
 }
-
 
